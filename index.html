@@ -18,8 +18,13 @@
     </header>
     <section id="user-goal">
       <h2>My Course Goal</h2>
-      <p>{{ courseGoal }}</p>
+
+      <button v-on:click ="courseGoal++">Add</button><br><br>
+      <button v-on:click= "courseGoal=courseGoal-1">Reduce</button>
+      <input type="text" v-on:input="setName">
+      <p>Result:{{ courseGoal }}</p>
       <p>lorem more <a v-bind:href="vueLink">about vue</a></p>
+      <p>your Name:{{ courseGoal }}</p>
     </section>
   </body>
 </html>
